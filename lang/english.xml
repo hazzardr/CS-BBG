@@ -2524,10 +2524,10 @@
 		<!-- === BUILDINGS === -->
 		<!-- == Aerodrome Buildings == -->
 		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="en_US">
-			<Text>+50% combat experience for air units trained in this city. +2 air unit slots in Aerodrome district. Allows the ability to airlift land units between Aerodrome districts with Airports after the Rapid Deployment civic is unlocked. +1 [ICON_RESOURCE_ALUMINUM] Aluminum and +1 [ICON_RESOURCE_URANIUM] Uranium per turn once each is discovered.</Text>
+			<Text>+50% combat experience for air units trained in this city. +2 air unit slots in Aerodrome district. Allows the ability to airlift land units between Aerodrome districts with Airports after the Rapid Deployment civic is unlocked.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_HANGAR_DESCRIPTION" Language="en_US">
-			<Text>+25% combat experience for air units trained in this city. +1 air unit slot in Aerodrome district. +1 [ICON_RESOURCE_ALUMINUM] Aluminum per turn once discovered.</Text>
+			<Text>+25% combat experience for air units trained in this city. +1 air unit slot in Aerodrome district.</Text>
 		</Replace>
 		<!-- == Campus == -->
 		<Row Tag="LOC_BUILDING_RESEARCH_LAB_EXPANSION2_DESCRIPTION" Language="en_US">
@@ -2553,16 +2553,16 @@
 		</Replace>
 		<!-- == Encampment Buildings == -->
 		<Replace Tag="LOC_BUILDING_BARRACKS_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>+25% combat experience for all melee and ranged land units trained in this city.[NEWLINE][NEWLINE]May not be built in an Encampment district that already has a Stable.[NEWLINE][NEWLINE]+2 [ICON_RESOURCE_IRON] Iron per turn once discovered.</Text>
+			<Text>+25% combat experience for all melee and ranged land units trained in this city.[NEWLINE][NEWLINE]May not be built in an Encampment district that already has a Stable.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_STABLE_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>+25% combat experience for all cavalry and siege class units trained in this city. May not be built in an Encampment district that already has a Barracks.[NEWLINE][NEWLINE]+2 [ICON_RESOURCE_HORSES] Horses per turn once discovered.</Text>
+			<Text>+25% combat experience for all cavalry and siege class units trained in this city. May not be built in an Encampment district that already has a Barracks.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_ARMORY_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>+25% combat experience for all land units trained in this city.[NEWLINE]Strategic Resource Stockpiles increased +10 (on Standard speed). +2 [ICON_RESOURCE_NITER] Niter per turn once discovered.</Text>
+			<Text>+25% combat experience for all land units trained in this city.[NEWLINE]Strategic Resource Stockpiles increased +10 (on Standard speed).</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_MILITARY_ACADEMY_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>+25% combat experience for all land units trained in this city.[NEWLINE]Strategic Resource Stockpiles increased +10 (on Standard speed). +2 [ICON_RESOURCE_OIL] Oil per turn once discovered.[NEWLINE]Once required Civics are unlocked, allows [ICON_CORPS] Corps or [ICON_ARMY] Armies to be trained directly and their costs reduced by 25%.</Text>
+			<Text>+25% combat experience for all land units trained in this city.[NEWLINE]Strategic Resource Stockpiles increased +10 (on Standard speed).[NEWLINE]Once required Civics are unlocked, allows [ICON_CORPS] Corps or [ICON_ARMY] Armies to be trained directly and their costs reduced by 25%.</Text>
 		</Replace>
 		<!-- == Entertainment Complex Buildings == -->
 		<Replace Tag="LOC_BUILDING_ARENA_EXPANSION1_DESCRIPTION" Language="en_US">
@@ -2598,10 +2598,10 @@
 			<Text>+25% combat experience for all naval units trained in this city. +1 [ICON_FOOD] Food on all Coast and Lake tiles for this city. +1 [ICON_HOUSING] Housing if this city is adjacent to coast. +1 [ICON_TRADEROUTE] Trade Route capacity, if this city does not yet have a Market building.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_SHIPYARD_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>+25% combat experience for all naval units trained in this city. Bonus [ICON_PRODUCTION] Production equal to the adjacency bonus of the Harbor district. +1 [ICON_PRODUCTION] Production on all fisheries and unimproved Coast and Lake tiles for this city. +1 [ICON_RESOURCE_COAL] Coal per turn once discovered.</Text>
+			<Text>+25% combat experience for all naval units trained in this city. Bonus [ICON_PRODUCTION] Production equal to the adjacency bonus of the Harbor district. +1 [ICON_PRODUCTION] Production on all fisheries and unimproved Coast and Lake tiles for this city.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_SEAPORT_DESCRIPTION" Language="en_US">
-			<Text>+25% combat experience for all naval units trained in this city. Once required Civics are unlocked, allows [ICON_CORPS] Fleets or [ICON_ARMY] Armadas to be trained directly and their costs reduced by 25%. +2 [ICON_GOLD] Gold on all Coast and Lake tiles for this city. +2 [ICON_RESOURCE_OIL] Oil per turn once discovered.</Text>
+			<Text>+25% combat experience for all naval units trained in this city. Once required Civics are unlocked, allows [ICON_CORPS] Fleets or [ICON_ARMY] Armadas to be trained directly and their costs reduced by 25%. +2 [ICON_GOLD] Gold on all Coast and Lake tiles for this city.</Text>
 		</Replace>
 		<!-- == Holy Site Buildings == -->
 		<Replace Tag="LOC_BUILDING_SHRINE_DESCRIPTION" Language="en_US">
