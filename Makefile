@@ -23,9 +23,11 @@ build:
 	mkdir -p $(DIST)
 	cp $(MOD_FILES) $(DIST)/
 	$(foreach dir,$(MOD_DIRS),cp -r $(dir) $(DIST)/$(dir);)
+	zip -r CS-BBG.zip $(DIST)/
 
 clean:
 	rm -rf $(DIST)
+	rm -f CS-BBG.zip
 	rm -rf $(MOD_FOLDER_LOC)/CS-BBG
 
 dev: build
