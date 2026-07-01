@@ -2,7 +2,6 @@
 --******			       CITY STATES      			  ******
 --==============================================================
 
-
 --==========================
 --*       ZANZIBAR         *
 --==========================
@@ -154,3 +153,4 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
     ('BBG_KUMASI_BASE_CULTURE_TRADEROUTE', 'Amount', 2);
 INSERT INTO TraitModifiers (TraitType, ModifierId) VALUES
     ('MINOR_CIV_KUMASI_TRAIT', 'BBG_KUMASI_UNIQUE_INFLUENCE_BASE_CULTURE_TRADEROUTE_MODIFIER');
+
