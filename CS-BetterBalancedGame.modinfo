@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- Maybe change Expanded Criteria ? -->
-
 <!-- Release ModID-->
 	<Mod id="00960fb6-8423-494e-82cf-e4be004ea322" version="1000">
 
 	<Properties>
-		<Name>CS - Better Balanced Game 7.3.2</Name>
+		<Name>CS - Better Balanced Game 7.4.3</Name>
 		<Description>
-			Fork of BBG 7.3.2
+			Fork of BBG 7.4.3
 		</Description>
 		<Teaser>Mod to balance multiplayer game.</Teaser>
 		<Authors>github.com/CivilizationVIBetterBalancedGame</Authors>
-		<Version>1000</Version>
+		<Version>1010</Version>
 		<SpecialThanks>abstr, acsess, Apeul, Bastik, Bobnotarobot, Calcifer, codenaugh, coloo, D. / Jack The Narrator, Hej, Facu, FaelSCCP, FlashyFeeds, fl0r3k, GLaYD, goldfire, iElden, Ignasiuz, keride, Kid, Klas, MarsLife(puj), Moumoulax, Onyxum, OSCAR., Pebbleton, priz, robal, seed.of.apricot, Sent Kurokawa, _vadya_queen, VioletXU1534, Vodairo, wazabaza, WhySoHate, Ybanca, Yenaleesternberg, ZhenjaMax, 3JIO6HbIU_Kycb</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
