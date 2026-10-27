@@ -22,8 +22,8 @@ MOD_FOLDER_LOC ?= $(CIV_USER_DIR)/Mods
 LOGS_DIR ?= $(CIV_APPDATA_DIR)/Logs
 
 # `make publish`: SteamCMD binary and Steam login (password/Steam Guard are prompted, never stored)
-STEAMCMD ?= steamcmd
-STEAM_USERNAME ?=
+STEAMCMD ?= $(HOME)/dev/tools/steamcmd/steamcmd.sh
+STEAM_USERNAME ?= protagonist99
 
 # Logs opened by `make logs` (:n / :p in less to switch); override with LOGS="GameCore.log ..."
 LOGS ?= Modding.log Database.log Lua.log
