@@ -13,8 +13,8 @@ MOD_DIRS := \
 	sql \
 	ui
 
-MOD_FOLDER_LOC = \
-	/home/brian/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/compatdata/289070/pfx/drive_c/users/steamuser/My\ Documents/My\ Games/Sid\ Meier\'s\ Civilization\ VI/Mods
+MOD_FOLDER_LOC ?= \
+	$(HOME)/.local/share/Steam/steamapps/compatdata/289070/pfx/drive_c/users/steamuser/My\ Documents/My\ Games/Sid\ Meier\'s\ Civilization\ VI/Mods
 
 .PHONY: build clean dev
 
