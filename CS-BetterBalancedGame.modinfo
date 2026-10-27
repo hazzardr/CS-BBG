@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- Release ModID-->
-	<Mod id="00960fb6-8423-494e-82cf-e4be004ea322" version="1000">
+	<Mod id="00960fb6-8423-494e-82cf-e4be004ea322" version="1011">
 
 	<Properties>
-		<Name>CS - Better Balanced Game 7.4.3</Name>
+		<Name>CS - Better Balanced Game 7.5.0</Name>
 		<Description>
-			Fork of BBG 7.4.3
+			Fork of BBG 7.5.0
 		</Description>
 		<Teaser>Mod to balance multiplayer game.</Teaser>
 		<Authors>github.com/CivilizationVIBetterBalancedGame</Authors>
-		<Version>1010</Version>
+		<Version>1011</Version>
 		<SpecialThanks>abstr, acsess, Apeul, Bastik, Bobnotarobot, Calcifer, codenaugh, coloo, D. / Jack The Narrator, Hej, Facu, FaelSCCP, FlashyFeeds, fl0r3k, GLaYD, goldfire, iElden, Ignasiuz, keride, Kid, Klas, MarsLife(puj), Moumoulax, Onyxum, OSCAR., Pebbleton, priz, robal, seed.of.apricot, Sent Kurokawa, _vadya_queen, VioletXU1534, Vodairo, wazabaza, WhySoHate, Ybanca, Yenaleesternberg, ZhenjaMax, 3JIO6HbIU_Kycb</SpecialThanks>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
@@ -347,6 +347,20 @@
 			<File>sql/BBG_Expanded/MOARUnits_enabledconfig.sql</File>
 		</UpdateDatabase>
 
+	    <UpdateDatabase id="BBG_Expanded_UU">
+			<Properties>
+				<LoadOrder>4</LoadOrder>
+			</Properties>
+			<Criteria>BBGExpanded_WIP</Criteria>
+			<File>sql/BBG_Expanded/Austria_Front.sql</File>
+		</UpdateDatabase>
+	    <UpdateDatabase id="BBG_Expanded_UU">
+			<Properties>
+				<LoadOrder>4</LoadOrder>
+			</Properties>
+			<Criteria>BBGExpanded_Release</Criteria>
+			<File>sql/BBG_Expanded/Austria_Front.sql</File>
+		</UpdateDatabase>
 	</FrontEndActions>
 
 	<!-- defines modifications to games (requires any LocalizedText from Settings above, and must import files before modifying any SQL tables) -->
@@ -453,13 +467,6 @@
 			</Properties>
 			<Criteria>DLC_Australia</Criteria>
 			<File>sql/DLC_Australia/_dlc_australia_utils.sql</File>
-		</UpdateDatabase>
-		<UpdateDatabase id="bbg_preload_db_indokhmer_updated">
-			<Properties>
-				<LoadOrder>11605</LoadOrder>
-			</Properties>
-			<Criteria>DLC_Indonesia_Khmer</Criteria>
-			<File>sql/DLC_Indonesia_Khmer/_dlc_indo_khmer_utils.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="bbg_preload_db_xp1_updated">
 			<Properties>
@@ -715,7 +722,6 @@
 				<LoadOrder>11627</LoadOrder>
 			</Properties>
 			<Criteria>DLC_Indonesia_Khmer</Criteria>
-			<File>sql/DLC_Indonesia_Khmer/Other.sql</File>
 			<File>sql/DLC_Indonesia_Khmer/Khmer.sql</File>
 			<File>sql/DLC_Indonesia_Khmer/Indonesia.sql</File>
 		</UpdateDatabase>
@@ -838,7 +844,6 @@
 			</Properties>
 			<Criteria>Negotiators</Criteria>
 			<File>sql/LP/lp_america_lincoln.sql</File>
-			<File>sql/LP/lp_arabia_saladin_sultan.sql</File>
 			<File>sql/LP/lp_kongo_mbande.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="BBG_Negotiators_XP2">
@@ -933,7 +938,14 @@
 			<File>sql/LP/Elizabeth.sql</File>
 			<File>sql/LP/Varangian.sql</File>
 		</UpdateDatabase>
-		<!-- -->
+		<!-- XP1 and XP2 LoadLast -->
+		<UpdateDatabase id="BBG_LoadLast">
+			<Properties>
+				<LoadOrder>200000000</LoadOrder> <!-- must be loaded after Expanded too -->
+			</Properties>
+			<Criteria>XP1_AND_XP2</Criteria>
+			<File>sql/Base/LoadLast.sql</File>
+		</UpdateDatabase>
 
 
 		<UpdateDatabase id="BBG_Expanded_MOAR_Units_WIP">
@@ -982,6 +994,14 @@
 			<File>sql/BBG_Expanded/Resources.sql</File>
 			<File>sql/BBG_Expanded/Barbarossa_UU.sql</File>
 			<File>sql/BBG_Expanded/Caesar_UU.sql</File>
+			<File>sql/BBG_Expanded/England_UU.sql</File>
+			<!-- BBG Expanded 2 -->
+			<File>sql/BBG_Expanded/Austria.sql</File>
+			<File>sql/BBG_Expanded/Goths.sql</File>
+			<File>sql/BBG_Expanded/PolandStanislaw.sql</File>
+			<File>sql/BBG_Expanded/TainoAnacaona.sql</File>
+			<File>sql/BBG_Expanded/Wonders.sql</File>
+			<File>sql/BBG_Expanded/Units.sql</File>
 		</UpdateDatabase>
 		<!-- I don't know how to do an OR -->
 		<UpdateDatabase id="BBG_Expanded_Release">
@@ -1005,6 +1025,14 @@
 			<File>sql/BBG_Expanded/Resources.sql</File>
 			<File>sql/BBG_Expanded/Barbarossa_UU.sql</File>
 			<File>sql/BBG_Expanded/Caesar_UU.sql</File>
+			<File>sql/BBG_Expanded/England_UU.sql</File>
+			<!-- BBG Expanded 2 -->
+			<File>sql/BBG_Expanded/Austria.sql</File>
+			<File>sql/BBG_Expanded/Goths.sql</File>
+			<File>sql/BBG_Expanded/PolandStanislaw.sql</File>
+			<File>sql/BBG_Expanded/TainoAnacaona.sql</File>
+			<File>sql/BBG_Expanded/Wonders.sql</File>
+			<File>sql/BBG_Expanded/Units.sql</File>
 		</UpdateDatabase>
 
 
@@ -1230,8 +1258,20 @@
 			</Properties>
 			<Criteria>NoConflictingUIMod</Criteria>
 		</ReplaceUIScript>
-
-
+		<ImportFiles id="bbg_greatpeoplepopup">
+			<Properties>
+				<LoadOrder>305</LoadOrder>
+			</Properties>
+			<File>ui/replacements/greatpeoplepopup_bbg.lua</File>
+		</ImportFiles>
+		<ReplaceUIScript id="bbg_greatpeoplepopup_import">
+			<Properties>
+				<LoadOrder>306</LoadOrder>
+				<LuaContext>GreatPeoplePopup</LuaContext>
+				<LuaReplace>ui/replacements/greatpeoplepopup_bbg.lua</LuaReplace>
+			</Properties>
+			<Criteria>NoConflictingUIMod</Criteria>
+		</ReplaceUIScript>
 
 		<AddGameplayScripts id="Lua">
 			<Criteria>BBGExpanded</Criteria>
@@ -1245,6 +1285,18 @@
       		<File>lua/BBG_Expanded/Al_Hasan.lua</File>
       		<File>lua/BBG_Expanded/Olympia.lua</File>
     	</AddGameplayScripts>
+
+		<AddGameplayScripts id="NewAction">
+			<Criteria>BBGExpanded</Criteria>
+			<Criteria>XP1_AND_XP2</Criteria>
+			<Criteria>DLC_Aztec</Criteria>
+			<Criteria>DLC_Macedon_Persia</Criteria>
+			<Criteria>Byzantium_Gaul</Criteria>
+			<Criteria>GranColombia_Maya</Criteria>
+			<LoadOrder>1000000</LoadOrder>
+      		<File>lua/BBG_Expanded/Goth.lua</File>
+    	</AddGameplayScripts>
+
 	</InGameActions>
 
 	<!-- defines file dependencies -->
@@ -1309,6 +1361,7 @@
 		<File>sql/Base/Spy.sql</File>
 		<File>sql/Base/Sumer.sql</File>
 		<File>sql/Base/Units.sql</File>
+		<File>sql/Base/LoadLast.sql</File>
 		<File>sql/Base/Wonders.sql</File>
 		<!-- XP 1-->
 		<File>sql/XP1/_xp1_utils.sql</File>
@@ -1391,8 +1444,6 @@
 		<File>sql/DLC_Nubia/xp2_nubia.sql</File>
 		<File>sql/DLC_Nubia/Nubia_nfp.sql</File>
 		<!-- -->
-		<File>sql/DLC_Indonesia_Khmer/_dlc_indo_khmer_utils.sql</File>
-			<File>sql/DLC_Indonesia_Khmer/Other.sql</File>
 			<File>sql/DLC_Indonesia_Khmer/Khmer.sql</File>
 		<File>sql/DLC_Indonesia_Khmer/Indonesia.sql</File>
 		<!-- -->
@@ -1420,7 +1471,6 @@
 		<!-- -->
 		<File>sql/LP/lp_rome_caesar.sql</File>
 		<File>sql/LP/lp_america_lincoln.sql</File>
-		<File>sql/LP/lp_arabia_saladin_sultan.sql</File>
 		<File>sql/LP/Sultan.sql</File>
 		<File>sql/LP/lp_kongo_mbande.sql</File>
 		<File>sql/LP/Tokugawa.sql</File>
@@ -1450,6 +1500,7 @@
 		<File>sql/BBG_Expanded/Vercingetorix.sql</File>
 		<File>sql/BBG_Expanded/Barbarossa_UU.sql</File>
 		<File>sql/BBG_Expanded/Caesar_UU.sql</File>
+		<File>sql/BBG_Expanded/England_UU.sql</File>
 		<File>sql/BBG_Expanded/Olympia.sql</File>
 		<File>sql/BBG_Expanded/Thule.sql</File>
 		<File>sql/BBG_Expanded/Te_Kinich.sql</File>
@@ -1460,11 +1511,21 @@
 		<File>sql/BBG_Expanded/Resources.sql</File>
 		<File>sql/BBG_Expanded/MOARUnits_enabled.sql</File>
 		<File>sql/BBG_Expanded/MOARUnits_enabledconfig.sql</File>
+		<!-- BBG Expanded 2 -->
+		<File>sql/BBG_Expanded/Austria.sql</File>
+		<File>sql/BBG_Expanded/Austria_Front.sql</File>
+		<File>sql/BBG_Expanded/Goths.sql</File>
+		<File>sql/BBG_Expanded/PolandStanislaw.sql</File>
+		<File>sql/BBG_Expanded/TainoAnacaona.sql</File>
+		<File>sql/BBG_Expanded/Units.sql</File>
+		<File>sql/BBG_Expanded/Wonders.sql</File>
+		
 		<!-- BBG Expanded lua -->
       	<File>lua/BBG_Expanded/Thule.lua</File>
       	<File>lua/BBG_Expanded/Te_Kinich.lua</File>
       	<File>lua/BBG_Expanded/Al_Hasan.lua</File>
       	<File>lua/BBG_Expanded/Olympia.lua</File>
+      	<File>lua/BBG_Expanded/Goth.lua</File>
 		<!-- -->
 		<File>sql/Secret_Societies.sql</File>
 		<!-- -->
@@ -1475,6 +1536,7 @@
 		<File>ui/replacements/endgamemenu.xml</File>
 		<!--<File>ui/replacements/productionpanel_bbg.lua</File>-->
 		<File>ui/replacements/tradeoverview_bbg.lua</File>
+		<File>ui/replacements/greatpeoplepopup_bbg.lua</File>
 		<File>ui/replacements/unitpanel_bbg.lua</File>
 		<File>ui/replacements/tradesupport.lua</File>
 		<File>ui/replacements/compatibility/traderoutechooser.lua</File>
