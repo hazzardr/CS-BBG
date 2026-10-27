@@ -13,11 +13,13 @@ MOD_DIRS := \
 	sql \
 	ui
 
-CIV_USER_DIR ?= \
-	$(HOME)/.local/share/Steam/steamapps/compatdata/289070/pfx/drive_c/users/steamuser/My\ Documents/My\ Games/Sid\ Meier\'s\ Civilization\ VI
+# Civ VI runs under Proton: Mods live in Documents, Logs (and Mods.sqlite cache) in AppData/Local
+PROTON_USER_DIR ?= $(HOME)/.local/share/Steam/steamapps/compatdata/289070/pfx/drive_c/users/steamuser
+CIV_USER_DIR ?= $(PROTON_USER_DIR)/My\ Documents/My\ Games/Sid\ Meier\'s\ Civilization\ VI
+CIV_APPDATA_DIR ?= $(PROTON_USER_DIR)/AppData/Local/Firaxis\ Games/Sid\ Meier\'s\ Civilization\ VI
 
 MOD_FOLDER_LOC ?= $(CIV_USER_DIR)/Mods
-LOGS_DIR ?= $(CIV_USER_DIR)/Logs
+LOGS_DIR ?= $(CIV_APPDATA_DIR)/Logs
 
 # Logs opened by `make logs` (:n / :p in less to switch); override with LOGS="GameCore.log ..."
 LOGS ?= Modding.log Database.log Lua.log
