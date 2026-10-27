@@ -468,13 +468,6 @@
 			<Criteria>DLC_Australia</Criteria>
 			<File>sql/DLC_Australia/_dlc_australia_utils.sql</File>
 		</UpdateDatabase>
-		<UpdateDatabase id="bbg_preload_db_indokhmer_updated">
-			<Properties>
-				<LoadOrder>11605</LoadOrder>
-			</Properties>
-			<Criteria>DLC_Indonesia_Khmer</Criteria>
-			<File>sql/DLC_Indonesia_Khmer/_dlc_indo_khmer_utils.sql</File>
-		</UpdateDatabase>
 		<UpdateDatabase id="bbg_preload_db_xp1_updated">
 			<Properties>
 				<LoadOrder>11606</LoadOrder>
@@ -729,7 +722,6 @@
 				<LoadOrder>11627</LoadOrder>
 			</Properties>
 			<Criteria>DLC_Indonesia_Khmer</Criteria>
-			<File>sql/DLC_Indonesia_Khmer/Other.sql</File>
 			<File>sql/DLC_Indonesia_Khmer/Khmer.sql</File>
 			<File>sql/DLC_Indonesia_Khmer/Indonesia.sql</File>
 		</UpdateDatabase>
@@ -852,7 +844,6 @@
 			</Properties>
 			<Criteria>Negotiators</Criteria>
 			<File>sql/LP/lp_america_lincoln.sql</File>
-			<File>sql/LP/lp_arabia_saladin_sultan.sql</File>
 			<File>sql/LP/lp_kongo_mbande.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="BBG_Negotiators_XP2">
@@ -1453,8 +1444,6 @@
 		<File>sql/DLC_Nubia/xp2_nubia.sql</File>
 		<File>sql/DLC_Nubia/Nubia_nfp.sql</File>
 		<!-- -->
-		<File>sql/DLC_Indonesia_Khmer/_dlc_indo_khmer_utils.sql</File>
-			<File>sql/DLC_Indonesia_Khmer/Other.sql</File>
 			<File>sql/DLC_Indonesia_Khmer/Khmer.sql</File>
 		<File>sql/DLC_Indonesia_Khmer/Indonesia.sql</File>
 		<!-- -->
@@ -1482,7 +1471,6 @@
 		<!-- -->
 		<File>sql/LP/lp_rome_caesar.sql</File>
 		<File>sql/LP/lp_america_lincoln.sql</File>
-		<File>sql/LP/lp_arabia_saladin_sultan.sql</File>
 		<File>sql/LP/Sultan.sql</File>
 		<File>sql/LP/lp_kongo_mbande.sql</File>
 		<File>sql/LP/Tokugawa.sql</File>
